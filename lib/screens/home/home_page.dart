@@ -107,13 +107,12 @@ class _HomePageState extends State<HomePage> {
                                       movie: movies.results[index],
                                     );
                                   } else {
-                                    return Expanded(
-                                        child: LinearProgressIndicator(
-                                            backgroundColor:
-                                                AppColors.darkMainAmber,
-                                            valueColor: AlwaysStoppedAnimation<
-                                                    Color>(
-                                                AppColors.darkSecondaryAmber)));
+                                    return LinearProgressIndicator(
+                                        backgroundColor:
+                                            AppColors.darkMainAmber,
+                                        valueColor:
+                                            AlwaysStoppedAnimation<Color>(
+                                                AppColors.darkSecondaryAmber));
                                   }
                                 }),
                           ],
